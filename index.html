@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-800">
+    <div class="max-w-[1320px] mx-auto my-[50px]">
+      <h1 class="text-center pb-[30px] text-[50px] text-emerald-500 font-bold">Movies To Watch</h1>
+      <div class="my-[20px] px-3">
+        <label for="" class="text-[30px] text-emerald-500 font-bold">Search Movie:</label>
+        <input
+          type="search"
+          name="inptbx"
+          class="border-2 border-emerald-500 outline-0 autofocus w-[300px] text-[20px] rounded-[10px]"
+          id="inptbx"
+          onkeyup="search(this)"
+        /><br />
+      </div>
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 gap-[20px] px-3"
+        id="display"
+      ></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
